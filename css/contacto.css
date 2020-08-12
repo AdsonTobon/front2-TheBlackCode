@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    margin: auto;
+
+}
+header{
+    text-align: center;
+}
+#header .nav{
+    text-align: inherit;
+    
+}
+
+header #sectionHeader{
+    text-align: inherit;
+   
+}
+
+
+#section1Main h2{
+    
+    text-align: center;
+    color: rgb(26, 160, 160);
+
+}
+#section1Main #parrafo1Section1Main{
+    text-align: center;
+    block-size: auto;
+    color: black;
+}
+
+#section1Main #parrafo2Section1Main{
+    text-align: center;
+    color: black;
+}
+form{
+    
+    padding: 20px;
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: block;
+    
+}
+
+
+#form .div-formulario{
+    position: relative;
+    margin: 45px;
+    text-align: center;
+    background: none;
+    color: #54585A 100%;
+    font-family: Open Sans;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px;
+    
+    
+
+}
+label{
+    color: lightslategray;
+    top: 10px;
+    transition: 0.5s ease-in all;
+    pointer-events: none;
+}
+
+button{
+    font-family: Open Sans;
+    background-color: rgb(26, 160, 160);
+    color: white;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+    
+   
+
+}
