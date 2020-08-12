@@ -1,0 +1,21 @@
+.info_teams{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.dual{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+
+.info_seg2{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(196, 192, 192);
+    border-radius: 2rem;
+}
+
