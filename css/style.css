@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 * {
  padding: 0;
   margin: 0;
@@ -91,7 +90,7 @@ footer a{
 
 footer ul{
  list-style-type: none;
-=======
+}
 .info_teams{
     display: flex;
     flex-flow: column wrap;
@@ -111,9 +110,7 @@ footer ul{
     text-align: center;
     background-color: rgb(196, 192, 192);
     border-radius: 2rem;
->>>>>>> 802c40df73af9b46f436d2f17c3fc35471bf47eb
-=======
-body{
+
 }
 #section2Main .div1Section2Main{
     display: flex;
@@ -195,6 +192,6 @@ body{
     margin: 10px;
     font-size: 20px;
  
->>>>>>> 8b244c553d17c742afff1beb88c9f9f3bf6589a8
+
 }
 
