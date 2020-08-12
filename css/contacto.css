@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h2 {
+  color: #ffffff;
+}
+
+nav {
+  background-color: #099d8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#nabvar{
+  position: fixed;
+  display: contents;
+}
+
+#navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+#navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 25px;
+}
+
+#sectionHeader{
+  background-image: url(../image/phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+
+#section1Main{
+  margin-top: 200px;
+}
