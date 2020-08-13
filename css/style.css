@@ -1,26 +1,27 @@
-
 * {
- padding: 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
 header h2 {
   color: #ffffff;
-  font-family: 'Rubik-medium',sans-serif;
+  font-family: "Rubik-medium", sans-serif;
   font-size: 16px;
 }
 
 nav {
-    background-color: #099d8d;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    /* position: fixed; */
+  background-color: #099d8d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
 }
 
-#navbar{
-  position: fixed;
+#navbar {
+  
   display: contents;
 }
 
@@ -35,163 +36,333 @@ nav {
 #navbar ul li a {
   color: #ffffff;
   padding: 25px;
-  font-family: 'Rubik-medium',sans-serif;
+  font-family: "Rubik-medium", sans-serif;
   text-decoration: none;
   font-size: 15px;
-} 
-
+}
 
 #sectionHeader {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-image: url(../image/principal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-image: url(../image/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#divSectionHeader{
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    padding: 15px;
-    background-color: #ffffff;
-    max-width: 600px;
+#divSectionHeader {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  padding: 15px;
+  background-color: #ffffff;
+  max-width: 600px;
 }
 
-#divSectionHeader p{
+#divSectionHeader p {
   font-size: 24px;
   width: 90%;
   color: #000000;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-#section1Main h2{
+#section1Main h2 {
   display: flex;
   justify-content: center;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
-footer{
-  padding: 20px;
-  overflow: hidden;
+/* ---------- Seccion Footer Jhonathan ------- */
+
+footer {
   display: flex;
-  bottom: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #b8b8b9;
+  padding: 30px;
 }
 
-footer a{
+footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #b8b8b9;
+  font-size: 14px;
+}
+footer img {
+  width: 120px;
+  height: 100px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  font-size: 14px;
+}
+
+/* ------ Seccion Equipo Alejandro --------- */
+
+.info_teams {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.dual {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: gainsboro;
+  border-color: white;
+  height: 35vh;
+}
+
+.info_seg2 {
+  width: 50%;
+  height: 200px;
+  text-align: center;
+}
+
+.triangle {
+  position: relative;
+  background: white;
+  height: 20vh;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 52px 52px 0 52px;
+
+  border-color: white transparent transparent transparent;
+
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+.text {
+  font-size: 16px;
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  /* padding-left: 3em;
+      padding-right: 3em; */
+}
+.txt_title {
+  font-size: 24px;
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+}
+
+/* -------- Seccion Quienes somos Monica------ */
+#section2Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section2Main h2 {
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#section2Main h4 {
+  font-family: "Open Sans", sans-serif;
   color: #000000;
+  font-size: 20px;
 }
 
-footer ul{
- list-style-type: none;
-}
-.info_teams{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+#section2Main p {
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
-.dual{
+.div1Section2Main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.div1Section2Main img {
+  width: 278px;
+  height: 278px;
+  border: 3px solid #b8b8b9;
+  border-radius: 5px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.div2Section2Main {
+  width: 439px;
+}
+
+.div2Section2Main h4 {
+  margin-bottom: 10px;
+}
+
+.divRedesSociales a {
+  display: inline;
+  color: #099d8d;
+  margin: 10px;
+}
+
+.class2div2Section2Main {
+  text-align: right;
+}
+
+/* --------- Media Query proyecto final -------- */
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+
+  header nav {
+    width: 100%;
     
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.info_seg2{
-    width: 50%;
-    height: 200px;
+  #divHeaderH2 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar ul {
+    width: 100%;
+    background-color: #14d9c4;
+  }
+
+  #navbar ul li a {
+    font-size: 13px;
+    padding: 2px;
+    margin: 5px;
+  }
+  #divSectionHeader {
+    left: 5px;
+    padding: 5px;
+  }
+  #section1Main {
+    width: 100%;
+    display: block;
+  }
+  .info_teams {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 140px;
+  }
+  .dual {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  .info_seg2 {
+    width: 100%;
     text-align: center;
-    background-color: rgb(196, 192, 192);
-    border-radius: 2rem;
+  }
 
-}
-#section2Main .div1Section2Main{
-    display: flex;
-    flex-direction: row; 
+  .info_seg2 h3 {
+    width: 100%;
+  }
+
+  .triangle {
+    position: relative;
+    background: white;
+    height: 20vh;
+  }
+
+  .triangle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px;
+    border-color: white transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
+
+  /* -----Seccion Quienes Somos----- */
+
+  .div1Section2Main {
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
-    
-}
-#section2Main .div2Section2Main{
+    align-items: center;
+  }
+
+  .div2Section2Main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .div2Section2Main h4 {
+    margin-top: 15px;
+  }
+
+  .div2Section2Main p {
+    width: 80%;
+    margin-left: 35px;
+    margin-top: 15px;
+  }
+
+  .div1Section2Main .div2Section2Main .divRedesSociales {
+    margin-top: 15px;
+  }
+
+  .class2div2Section2Main {
     display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    margin-bottom: 60px; 
+    flex-direction: column;
+  }
+
+  .div1Section2Main img {
+    order: 1;
+  }
+
+  .div1Section2Main .div2Section2Main {
+    order: 2;
+  }
 }
 
-#section2Main h2{
-    display: flex;
-    justify-content: center;
-    margin: 45px 0px;
-    color: #099D8D;
-    font-family: 'Rubik', sans-serif;
-    font-size: 24px;
-}
-#section2Main .div1Section2Main h4{
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    font-size: 20px;
-    margin: 30px 0px 0px 30px;
-}
-#section2Main .div2Section2Main h4{
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    font-size: 20px;
-    text-align: right;
-    margin: 30px 30px 15px 0px;
-   
-}
-#section2Main .div1Section2Main p{
-    font-family: 'Open Sans', sans-serif;
-    color: #54585A;
-    font-size: 16px;
-    width: 439px;
-    margin: 0px 0px 15px 30px;
-}
-#section2Main .div2Section2Main p{
-    font-family: 'Open Sans', sans-serif;
-    color: #54585A;
-    font-size: 16px;
-    width: 439px;
-    text-align: right;
-    margin: 0px 30px 15px 0px;
-}
-#section2Main img{
-    width: 205px;
-    height: 205px; 
-    border-radius: 10px;
-    border: 3px solid rgb(236, 236, 236);
-}
 
-#section2Main .div1Section2Main .divA{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-}
-#section2Main .div2Section2Main .divA1{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 20px;
-    
-}
-#section2Main .div1Section2Main a{
-    color: rgb(1, 146, 156);
-    margin: 10px;
-    font-size: 20px;
-}
-#section2Main .div2Section2Main a{
-    color: rgb(1, 146, 156);
-    margin: 10px;
-    font-size: 20px;
- 
+@media (max-width:360px){
 
+ .info_teams {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 45px;
+  }
 }
-
