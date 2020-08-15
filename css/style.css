@@ -163,66 +163,157 @@ footer ul li a {
 }
 
 /* -------- Seccion Quienes somos Monica------ */
-#section2Main {
+#section2Main .div1Section2Main{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row; 
+  justify-content: flex-start;
+  margin: 0px 0px 60px 150px;
+  
 }
-#section2Main h2 {
-  color: #099d8d;
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
-  margin-top: 45px;
-  margin-bottom: 45px;
-}
-
-#section2Main h4 {
-  font-family: "Open Sans", sans-serif;
-  color: #000000;
-  font-size: 20px;
-}
-
-#section2Main p {
-  font-family: "Open Sans", sans-serif;
-  color: #54585a;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.div1Section2Main {
+#section2Main .div2Section2Main{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 60px;
+  justify-content: flex-end;
+  margin: 0px 150px 60px 0px;
 }
 
-.div1Section2Main img {
-  width: 278px;
-  height: 278px;
-  border: 3px solid #b8b8b9;
-  border-radius: 5px;
-  margin-left: 45px;
-  margin-right: 45px;
+#section2Main h2{
+  display: flex;
+  justify-content: center;
+  margin: 45px 0px;
+  color: #099D8D;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
 }
-
-.div2Section2Main {
+#section2Main .div1Section2Main h4{
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  margin: 30px 0px 15px 45px;
+}
+#section2Main .div2Section2Main h4{
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  margin: 30px 45px 15px 0px;
+ 
+}
+#section2Main .div1Section2Main p{
+  font-family: 'Open Sans', sans-serif;
+  color: #54585A;
+  font-size: 16px;
   width: 439px;
+  margin: 0px 0px 15px 45px;
+}
+#section2Main .div2Section2Main p{
+  font-family: 'Open Sans', sans-serif;
+  color: #54585A;
+  font-size: 16px;
+  width: 439px;
+  text-align: right;
+  margin: 0px 45px 15px 0px;
+}
+#section2Main img{
+  width: 278px;
+  height: 278px; 
+  border-radius: 10px;
+  border: 3px solid rgb(236, 236, 236);
 }
 
-.div2Section2Main h4 {
-  margin-bottom: 10px;
+#section2Main .div1Section2Main .divA{
+  display: flex;
+  flex-direction: row;
+  margin-left: 45px;
 }
-
-.divRedesSociales a {
-  display: inline;
+#section2Main .div2Section2Main .divA1{
+  display: flex;
+  flex-direction: row;
+  margin-right: 45px;
+  justify-content: flex-end;
+}
+#section2Main .div1Section2Main a{
   color: #099d8d;
   margin: 10px;
+  font-size: 20px;
+}
+#section2Main .div2Section2Main a{
+  color: #099d8d;
+  margin: 10px;
+  font-size: 20px;
+  
+}
+@media(max-width: 900px){
+  #section2Main .div1Section2Main, #section2Main .div2Section2Main{
+      display: flex;
+      justify-content: center; 
+      width: initial;
+      margin: 0px;   
+  }  
+  
 }
 
-.class2div2Section2Main {
-  text-align: right;
-}
+@media(max-width: 700px){
+  #section2Main .div1Section2Main, #section2Main .div2Section2Main{
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+       
+  } 
+  #section2Main .div2Section2Main img{
+      margin: 15px 0px 0px 0px;
+      display: flex;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+     
+  }   
+  #section2Main .div1Section2Main h4, #section2Main .div2Section2Main h4{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: auto;
+      margin: 15px 0px 0px 0px;     
+  }  
+
+  #section2Main .div1Section2Main p, #section2Main .div2Section2Main p{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 0px;
+      margin-top: 15px;
+      width: initial;
+  }
+
+  #section2Main .div2Section2Main img{
+      margin-top: 15px;
+      display: flex;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      order: 0;
+  }
+  #section2Main .div2Section2Main div{
+      order: 1;
+  }
+  #section2Main .div1Section2Main .divA, #section2Main .div2Section2Main .divA1{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 0px;
+  }
+  #section2Main .div1Section2Main, #section2Main .div2Section2Main {
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  }
+  
+} 
 
 /* --------- Media Query proyecto final -------- */
 
@@ -314,7 +405,7 @@ footer ul li a {
     transform: translateX(-50%) translateY(100%);
   }
 
-  /* -----Seccion Quienes Somos----- */
+  /* -----Seccion Quienes Somos-----
 
   .div1Section2Main {
     flex-direction: column;
@@ -353,7 +444,7 @@ footer ul li a {
 
   .div1Section2Main .div2Section2Main {
     order: 2;
-  }
+  } */
 }
 
 
