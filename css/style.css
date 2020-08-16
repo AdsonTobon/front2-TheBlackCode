@@ -12,7 +12,7 @@ header h2 {
 
 nav {
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
   background-color: #099d8d;
   display: flex;
   justify-content: space-around;
@@ -105,17 +105,29 @@ footer ul li a {
   font-size: 14px;
 }
 
+
+#section1Main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ------ Seccion Equipo Alejandro --------- */
 
 .info_teams {
+  width: 95%;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+
 }
 
 .dual {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   background-color: gainsboro;
   border-color: white;
@@ -123,9 +135,11 @@ footer ul li a {
 }
 
 .info_seg2 {
-  width: 50%;
+  width: 45%;
   height: 200px;
   text-align: center;
+  margin: 30px;
+  
 }
 
 .triangle {
@@ -146,13 +160,13 @@ footer ul li a {
   border-color: white transparent transparent transparent;
 
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
+  transform: translateX(-50%) translateY(170%);
 }
 .text {
   font-size: 16px;
   color: #54585a;
   font-family: "Open Sans", sans-serif;
-  text-align: center;
+  text-align: justify;
   /* padding-left: 3em;
       padding-right: 3em; */
 }
@@ -160,6 +174,7 @@ footer ul li a {
   font-size: 24px;
   color: #099d8d;
   font-family: "Rubik", sans-serif;
+  margin-top: 45px;
 }
 
 /* -------- Seccion Quienes somos Monica------ */
@@ -253,7 +268,7 @@ footer ul li a {
   
 }
 
-@media(max-width: 700px){
+@media(max-width: 768px){
   #section2Main .div1Section2Main, #section2Main .div2Section2Main{
       display: flex;
       flex-direction: column;
@@ -312,6 +327,10 @@ footer ul li a {
       text-align: center;
       align-items: center;
   }
+
+  #section2Main{
+    margin-bottom: 45px;
+  }
   
 } 
 
@@ -329,11 +348,13 @@ footer ul li a {
 
   header nav {
     width: 100%;
-    
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+    margin-top: -390px;
   }
 
   #divHeaderH2 {
@@ -363,10 +384,11 @@ footer ul li a {
     display: block;
   }
   .info_teams {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: block;
     margin-bottom: 140px;
+    margin-left: 15px;
   }
   .dual {
     width: 100%;
@@ -375,15 +397,12 @@ footer ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    
   }
   .info_seg2 {
-    width: 100%;
+    width: 85%;
+    height: 100%;
     text-align: center;
-  }
-
-  .info_seg2 h3 {
-    width: 100%;
   }
 
   .triangle {
@@ -402,58 +421,26 @@ footer ul li a {
     border-width: 0px;
     border-color: white transparent transparent transparent;
     left: 50%;
-    transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%) translateY(180%);
   }
 
-  /* -----Seccion Quienes Somos-----
-
-  .div1Section2Main {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .info2{
+    margin-top: -20px;
+    margin-bottom: 45px;
   }
 
-  .div2Section2Main {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-
-  .div2Section2Main h4 {
-    margin-top: 15px;
-  }
-
-  .div2Section2Main p {
-    width: 80%;
-    margin-left: 35px;
-    margin-top: 15px;
-  }
-
-  .div1Section2Main .div2Section2Main .divRedesSociales {
-    margin-top: 15px;
-  }
-
-  .class2div2Section2Main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .div1Section2Main img {
-    order: 1;
-  }
-
-  .div1Section2Main .div2Section2Main {
-    order: 2;
-  } */
+ 
 }
 
 
 @media (max-width:360px){
 
  .info_teams {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: block;
     margin-bottom: 45px;
+    margin-left: 15px;
   }
+
 }

@@ -229,6 +229,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+    margin-top: -200px;
   }
 
   #divHeaderH2 {
