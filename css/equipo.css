@@ -182,7 +182,7 @@ footer ul li a {
   }
 
   header section img {
-    content: url(/image/Collage-grupal.jpg);
+    content: url(../image/Collage-grupal.jpg);
     width: 100%;
     height: 450px;
     position: relative;
